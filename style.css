@@ -574,3 +574,42 @@ section{
     font-size:13px;
     font-weight:600;
 }
+
+.contact-container{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:50px;
+}
+
+.contact-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.4s;
+}
+
+.contact-card:hover{
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(109,33,79,0.15);
+}
+
+.contact-card h3{
+    color:#6D214F;
+    margin-bottom:15px;
+}
