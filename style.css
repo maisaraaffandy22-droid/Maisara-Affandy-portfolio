@@ -524,6 +524,14 @@ section{
     transition:0.4s;
 }
 
+.evidence-card{
+    min-height:260px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
 .evidence-card:hover{
     transform:translateY(-10px);
 }
