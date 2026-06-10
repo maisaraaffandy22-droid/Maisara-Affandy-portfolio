@@ -372,6 +372,16 @@ section{
         #1B365D
     );
 
+#plan{
+    background:
+    linear-gradient(
+        135deg,
+        #eef2ff,
+        #f8fafc,
+        #fdf2f8
+    );
+}
+
     .year{
     display:inline-block;
 
