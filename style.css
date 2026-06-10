@@ -723,7 +723,9 @@ section{
     font-size:60px;
 }
 
-/* ===== CERTIFICATES ===== */
+/* ==========================
+   CERTIFICATES
+========================== */
 
 #certificates{
     background:white;
@@ -732,10 +734,11 @@ section{
 .certificate-grid{
     display:grid;
     grid-template-columns:
-    repeat(auto-fit,minmax(350px,1fr));
+    repeat(auto-fit,minmax(350px,400px));
 
     gap:30px;
-    margin-top:40px;
+
+    margin-top:50px;
 }
 
 .certificate-card{
@@ -746,9 +749,9 @@ section{
     overflow:hidden;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,0.08);
+    0 10px 25px rgba(0,0,0,0.08);
 
-    transition:0.4s;
+    transition:0.3s;
 }
 
 .certificate-card:hover{
@@ -762,7 +765,7 @@ section{
 }
 
 .certificate-card h3{
-    padding:20px 20px 10px;
+    padding:20px;
     color:#6D214F;
 }
 
