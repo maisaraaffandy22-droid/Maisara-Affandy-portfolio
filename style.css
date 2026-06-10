@@ -410,3 +410,39 @@ section{
     border-radius:10px;
 }
 
+.evidence-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    margin-top:50px;
+}
+
+.evidence-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:all 0.4s ease;
+}
+
+.evidence-card:hover{
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(109,33,79,0.15);
+}
+
+.evidence-card h3{
+    color:#6D214F;
+    margin-bottom:15px;
+}
