@@ -197,10 +197,30 @@ section{
     font-size:28px;
 }
 
-#career h2{
-    font-size:50px;
+#career h2,
+#skills h2,
+#plan h2,
+#evidence h2,
+#contact h2{
+    font-size:40px;
     color:#1B365D;
-    margin-bottom:20px;
+    position:relative;
+    margin-bottom:50px;
+}
+
+#career h2::after,
+#skills h2::after,
+#plan h2::after,
+#evidence h2::after,
+#contact h2::after{
+    content:'';
+    width:80px;
+    height:5px;
+    background:#6D214F;
+    position:absolute;
+    left:0;
+    bottom:-12px;
+    border-radius:10px;
 }
 
 #career h3{
@@ -213,24 +233,6 @@ section{
     font-size:20px;
     line-height:1.8;
     max-width:900px;
-}
-
-section h2{
-    font-size:40px;
-    color:#1B365D;
-    position:relative;
-    margin-bottom:40px;
-}
-
-section h2::after{
-    content:'';
-    width:80px;
-    height:5px;
-    background:#6D214F;
-    position:absolute;
-    left:0;
-    bottom:-10px;
-    border-radius:10px;
 }
 
 @keyframes fadeUp{
