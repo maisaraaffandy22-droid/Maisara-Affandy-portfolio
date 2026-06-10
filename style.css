@@ -161,3 +161,21 @@ section{
     color:#6D214F;
     font-size:28px;
 }
+
+#career h2{
+    font-size:50px;
+    color:#1B365D;
+    margin-bottom:20px;
+}
+
+#career h3{
+    font-size:36px;
+    color:#1B365D;
+    margin-bottom:15px;
+}
+
+#career p{
+    font-size:20px;
+    line-height:1.8;
+    max-width:900px;
+}
