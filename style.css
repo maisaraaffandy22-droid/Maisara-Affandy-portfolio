@@ -64,9 +64,7 @@ nav a{
 }
 
 .hero-content h1{
-    font-size:70px;
-    line-height:1.1;
-    color:#1B365D;
+    font-size:clamp(40px,5vw,60px);
 }
 
 .hero-content h2{
