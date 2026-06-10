@@ -1602,9 +1602,13 @@ section{
     padding:0 20px 20px;
 }
 
-/* =========================
-   CAREER REDESIGN
-========================= */
+/* ==========================
+   CAREER SECTION FINAL
+========================== */
+
+#career{
+    background:white;
+}
 
 .career-intro{
     max-width:900px;
@@ -1620,7 +1624,6 @@ section{
     );
 
     padding:40px;
-
     border-radius:25px;
 
     display:flex;
@@ -1629,8 +1632,7 @@ section{
 
     margin-top:30px;
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,0.08);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .career-icon{
@@ -1638,21 +1640,65 @@ section{
 }
 
 .career-main-card h3{
+    font-size:42px;
     color:#2563eb;
-    font-size:40px;
+    margin-bottom:10px;
+}
+
+.career-main-card p{
+    color:#64748b;
+    font-size:18px;
 }
 
 .career-stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.career-stat{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.career-stat:hover{
+    transform:translateY(-10px);
+}
+
+.career-stat h3{
+    font-size:42px;
+    color:#1B365D;
+    margin-bottom:10px;
+}
+
+.career-subtitle{
+    margin-top:60px;
+    margin-bottom:30px;
+    color:#1B365D;
+    font-size:36px;
+}
+
+/* CAREER PATH */
+
+.path-grid{
     display:grid;
     grid-template-columns:
     repeat(auto-fit,minmax(220px,1fr));
 
     gap:25px;
 
-    margin-top:40px;
+    margin-bottom:60px;
 }
 
-.career-stat{
+.path-card{
     background:white;
 
     padding:30px;
@@ -1667,20 +1713,25 @@ section{
     transition:0.3s;
 }
 
-.career-stat:hover{
+.path-card:hover{
     transform:translateY(-10px);
 }
 
-.career-stat h3{
-    color:#6D214F;
-    font-size:38px;
+.path-card.active{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
 }
 
-.career-subtitle{
-    margin-top:60px;
-    margin-bottom:30px;
-    color:#1B365D;
+.path-card h4{
+    margin-bottom:10px;
 }
+
+/* RESPONSIBILITIES */
 
 .responsibility-grid{
     display:grid;
@@ -1708,49 +1759,4 @@ section{
 
 .responsibility-card:hover{
     transform:translateY(-8px);
-}
-
-.path-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:25px;
-
-    margin-top:25px;
-    margin-bottom:60px;
-}
-
-.path-card{
-    background:white;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.08);
-
-    transition:0.3s;
-}
-
-.path-card:hover{
-    transform:translateY(-10px);
-}
-
-.path-card.active{
-    background:
-    linear-gradient(
-        135deg,
-        #2563eb,
-        #1d4ed8
-    );
-
-    color:white;
-}
-
-.path-card h4{
-    margin-bottom:10px;
 }
