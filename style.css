@@ -11,9 +11,12 @@ html{
 
 body{
     background:
-    radial-gradient(circle at 20% 20%, rgba(109,33,79,0.05), transparent 25%),
-    radial-gradient(circle at 80% 80%, rgba(27,54,93,0.05), transparent 25%),
-    #f8fafc;
+    linear-gradient(
+        135deg,
+        #f8fafc 0%,
+        #eef2ff 50%,
+        #fdf2f8 100%
+    );
 
     color:#111827;
 }
@@ -57,6 +60,10 @@ nav a{
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
+.hero-image img{
+    animation:float 4s ease-in-out infinite;
+}
+
 .tag{
     color:#6D214F;
     font-weight:bold;
@@ -79,6 +86,20 @@ nav a{
 
 .buttons{
     margin-top:30px;
+}
+
+.btn,
+.btn-outline{
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-outline:hover{
+    background:#1B365D;
+    color:white;
 }
 
 .btn{
@@ -150,11 +171,25 @@ section{
 }
 
 .career-card{
-    background:#f8fafc;
+    background:white;
     padding:25px;
-    border-radius:15px;
+    border-radius:20px;
     min-width:220px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    transition:all 0.4s ease;
+    animation:fadeUp 0.8s ease forwards;
+}
+
+.career-card:hover{
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
+    box-shadow:
+        0 20px 40px rgba(109,33,79,0.2);
 }
 
 .career-card h4{
@@ -178,4 +213,52 @@ section{
     font-size:20px;
     line-height:1.8;
     max-width:900px;
+}
+
+section h2{
+    font-size:40px;
+    color:#1B365D;
+    position:relative;
+    margin-bottom:40px;
+}
+
+section h2::after{
+    content:'';
+    width:80px;
+    height:5px;
+    background:#6D214F;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    border-radius:10px;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
 }
