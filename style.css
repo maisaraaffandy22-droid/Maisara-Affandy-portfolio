@@ -131,3 +131,33 @@ section{
     margin-top:5px;
     color:#555;
 }
+
+/* ===== CAREER SECTION ===== */
+
+#career{
+    background:white;
+}
+
+.career-box{
+    margin-top:40px;
+}
+
+.career-stats{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.career-card{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:15px;
+    min-width:220px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.career-card h4{
+    color:#6D214F;
+    font-size:28px;
+}
