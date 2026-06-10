@@ -613,3 +613,83 @@ section{
     color:#6D214F;
     margin-bottom:15px;
 }
+
+/* =========================
+   EVIDENCE SECTION
+========================= */
+
+.evidence-stats{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.stat-box{
+    background:white;
+    width:180px;
+    height:150px;
+
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+}
+
+.stat-box h3{
+    font-size:40px;
+    color:#6D214F;
+}
+
+.stat-box p{
+    margin-top:10px;
+}
+
+.evidence-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+}
+
+.evidence-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.evidence-card:hover{
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(109,33,79,0.15);
+}
+
+.evidence-card h3{
+    color:#6D214F;
+    margin-bottom:20px;
+}
+
+.evidence-card p{
+    line-height:1.8;
+}
