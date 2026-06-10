@@ -285,17 +285,25 @@ section{
 
     background:white;
 
-    width:700px;
-    max-width:100%;
+    padding:25px 30px;
 
-    padding:25px;
+    border-radius:18px;
 
-    border-radius:20px;
+    max-width:750px;
+
+    border-left:6px solid #6D214F;
 
     box-shadow:
-    0 8px 20px rgba(0,0,0,0.08);
+    0 10px 25px rgba(0,0,0,0.08);
 
     transition:all 0.3s ease;
+}
+
+.timeline-item:hover{
+    transform:translateX(10px);
+
+    box-shadow:
+    0 15px 35px rgba(109,33,79,0.18);
 }
 
 .timeline-item:hover{
@@ -363,6 +371,31 @@ section{
         #6D214F,
         #1B365D
     );
+
+    .year{
+    display:inline-block;
+
+    background:
+    linear-gradient(
+        135deg,
+        #6D214F,
+        #1B365D
+    );
+
+    color:white;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:15px;
+}
 
     border-radius:10px;
 }
