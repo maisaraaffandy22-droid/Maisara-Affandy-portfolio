@@ -1709,3 +1709,48 @@ section{
 .responsibility-card:hover{
     transform:translateY(-8px);
 }
+
+.path-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:25px;
+    margin-bottom:60px;
+}
+
+.path-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.path-card:hover{
+    transform:translateY(-10px);
+}
+
+.path-card.active{
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+}
+
+.path-card h4{
+    margin-bottom:10px;
+}
