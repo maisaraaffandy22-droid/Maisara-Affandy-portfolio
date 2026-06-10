@@ -264,3 +264,30 @@ section{
     }
 
 }
+
+.timeline{
+    margin-top:50px;
+    border-left:4px solid #6D214F;
+    padding-left:30px;
+}
+
+.timeline-item{
+    background:white;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.timeline-item:hover{
+    transform:translateX(10px);
+}
+
+.timeline-item h3{
+    color:#6D214F;
+    margin-bottom:10px;
+}
